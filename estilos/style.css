@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'cafe';
+    src: url('../fonts/lonely_coffee/Lonely\ Coffee.otf') 
+    format('opentype');
+    font-weight: normal;}
+
+@font-face{
+    font-family:'escrita';
+    src: url('../fonts/qafientola/Qafientola.otf')
+    format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*
+cores usadas:
+verde-claro = #00E64C
+laranja-amarelado = #E68A00
+roxo-claro = #7300E5
+roxo-ecuro = #603091
+verde- escuro = #336644
+marrom = #665233
+*/
+:root{
+    --cor0:#00E64C;
+    --cor1:#935d9b;
+    --cor2:#7300E5;
+    --cor3:#603091;
+    --cor4:#336644;
+    --cor5:#665233;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:"cafe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    --fonte-esc:'escrita', Arial;
+}
+
+html,body{
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrao);
+    min-height: 100vh ;
+
+}
+header{
+    background-image: url(../imagens/icedmontefundo.png);
+    background-position: center center ;
+    min-height: 500px;
+    padding-top: 40px;
+    ;
+}
+
+nav{ 
+
+    margin-top: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+nav > a{
+    color: var(--cor5);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.331);
+}
+
+nav>a:hover{
+    background-color: var(--cor3);
+    color: var(--cor0);
+    margin: 10px;
+}
+
+h1{
+    font-family: var(--fonte-destaque);
+    font-size: 50px;
+    color:var(--cor2);
+    background-image: linear-gradient(to right,  var(--cor0),var(--cor2));
+    text-shadow: 1px 1px 1px black ;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+}
+.ini{
+    font-family: var(--fonte-esc);
+    font-size: 30px;
+    font-weight: bolder;
+}
+h2{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to left, var(--cor5),var(--cor4));
+    color: black;
+    text-shadow: 1px 1px 1px var(--cor0);
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+    
+}
+main p{
+    font-family: var(--fonte-esc);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0px;
+    text-indent: 30px;
+    margin: 0px 0px;
+    line-height: 2em;
+    text-align: center;
+    background-image: linear-gradient(to bottom,var(--cor1),var(--cor3));
+    border-radius: 2px;
+
+}
+
+main{
+    background-color: var(--cor1);
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.434);
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+}
+p>.frutas{
+    width: 80%;
+    margin: auto;
+}
+section.imagem{
+    background-color: rgb(112, 109, 109);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.518);
+    background-attachment: fixed;
+
+       
+}
+
+section#frutas{
+    background-image: url(../imagens/açai\ no\ copo2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section#copo{
+    background-image: url(../imagens/açai\ no\ copo2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#tig{
+    background-image: url(../imagens/tigelaaçai.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#saladas{
+    background-image: url(../imagens/saladas\ de\ frutas.jpeg);
+    background-position: center center;
+    background-size: cover;
+
+}
+section#fondue{
+    background-image: url(../imagens/fondue\ de\ frutas.jpeg);
+    background-position: center center;
+    background-size: cover;
+
+}
+section#trufados{
+    background-image: url(../imagens/TRUFADOS1.png);
+    background-position: center center;
+    background-size: contain;
+
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+td,th{
+    border: 5px solid black;
+    text-align: center;
+    font-size: 30px;
+
+}
+th{
+    background-color: var(--cor0);
+    font-family: var(--fonte-destaque);
+}
+td{
+    font-size: 20px;
+    font-weight: bolder;
+    overflow: auto;
+}
+tr:nth-child(even){
+    background-color: var(--cor1);
+}
+tr:nth-child(odd){
+    background-color: var(--cor3);
+}
+ul{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    list-style-type: '🍒\00A0\00A0';
+    list-style-position: inside;
+    background-color: var(--cor0);
+    columns: 2;
+    line-height: 1.5em;
+    background-color:var(--cor1);
+}
+
+#trufados>video{    
+   margin-top: 50px;
+   padding: 10px;
+
+
+}
+
+#contatos>a{
+    text-decoration: none;
+    color: var(--cor0);
+    text-shadow: 1px 1px 1px var(--cor2);
+
+}
+#contatos>a:hover{
+    color: var(--cor2);
+    text-decoration: underline;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.331);
+}
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px;
+
+}
