@@ -79,6 +79,12 @@ nav>a:hover{
     margin: 10px;
 }
 
+section#inicio > h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-indent: 30px;
+}
+
 h1{
     font-family: var(--fonte-destaque);
     font-size: 50px;
@@ -108,7 +114,7 @@ main p{
     font-family: var(--fonte-esc);
     font-size: 1.5em;
     font-weight: bold;
-    padding: 0px;
+    padding: 10px;
     text-indent: 30px;
     margin: 0px 0px;
     line-height: 2em;
